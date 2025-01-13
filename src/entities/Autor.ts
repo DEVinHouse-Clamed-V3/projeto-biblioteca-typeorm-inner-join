@@ -1,34 +1,28 @@
-import {
-    Entity,
-    PrimaryGeneratedColumn,
-    Column,
-    CreateDateColumn,
-    UpdateDateColumn,
-  } from "typeorm";
-  
-  @Entity("autores") // Nome da tabela no banco
-  export class Autor {
+import { Entity, PrimaryGeneratedColumn, Column, CreateDateColumn, UpdateDateColumn } from "typeorm";
+
+@Entity('authors')
+export default class Autor {
     @PrimaryGeneratedColumn()
     id: number;
-  
-    @Column({ type: "varchar", nullable: false })
+
+    @Column()
     name: string;
-  
-    @Column({ type: "date", nullable: false })
+
+    @Column()
     birthdate: Date;
-  
-    @Column({ type: "text", nullable: true })
+
+    @Column()
     biography: string;
-  
-    @Column({ type: "varchar", nullable: false })
+
+    @Column()
     nationality: string;
-  
-    @Column({ type: "boolean", default: true })
+
+    @Column({ default: true })
     active: boolean;
-  
+
     @CreateDateColumn()
     created_at: Date;
-  
+
     @UpdateDateColumn()
     updated_at: Date;
-  }
+}
