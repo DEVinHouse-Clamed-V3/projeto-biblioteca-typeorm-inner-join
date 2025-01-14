@@ -8,7 +8,7 @@ import {
 } from "typeorm";
 
 @Entity("books") // Nome da tabela no banco
-export class Livro {
+export default class Livro {
     @PrimaryGeneratedColumn()
     id: number;
 
@@ -24,7 +24,7 @@ export class Livro {
     @Column({ type: "varchar", nullable: false })
     isbn: string;
 
-    @Column({ type: "int", default: false })
+    @Column({ type: "int", default: 0 })
     page_count: number;
 
     @Column({ type: "varchar", default: false })

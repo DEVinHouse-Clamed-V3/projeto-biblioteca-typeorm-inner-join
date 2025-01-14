@@ -4,7 +4,7 @@ import cors from "cors";
 
 import { AppDataSource } from "./database/data-source";
 
-import livroRoutes from "./routes/livro.routes";
+import livroRoutes from "./routes/leitor.routes";
 import auditorioRoutes from "./routes/auditorio.routes";
 import autorRoutes from "./routes/autor.routes";
 import leitorRoutes from "./routes/leitor.routes";
@@ -21,7 +21,7 @@ AppDataSource.initialize()
   })
   .catch(() => console.log("Erro ao conectar com o banco de dados"));
 
-  
+
 app.use("/livros", livroRoutes);
 app.use("/auditorios", auditorioRoutes);
 app.use("/autores", autorRoutes);
