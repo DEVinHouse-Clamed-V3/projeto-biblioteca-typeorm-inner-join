@@ -6,6 +6,8 @@ import {
   UpdateDateColumn,
 } from "typeorm";
 
+// aqui estou criando a entidadeas de auditorios colunas de informacoes
+
 @Entity("auditoriums")
 class Auditorium {
   @PrimaryGeneratedColumn()
