@@ -88,3 +88,4 @@ npm run dev
 
   Essa rota remove um autor do banco de dados, utilizando o parâmetro **id**.
 
+LINK DO VÍDEO - https://drive.google.com/file/d/1b3ueoLQ_HNWm18waNEh1P2lRoe-Mg1nf/view?usp=sharing
